@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Latihan HTTP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="post.name" placeholder="Name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="post.job" placeholder="Job"></ion-input>
+  </ion-item>
+  
+  <ion-button shape="round" color="dark" (click)="add()">Add</ion-button>
+  <ion-button shape="round" color="warning" (click)="edit()">Edit</ion-button>
+  <ion-button shape="round" color="danger" (click)="del()">Delete</ion-button>
+</ion-content>
